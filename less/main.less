@@ -1,3 +1,12 @@
+@font-face{
+	font-family: open-sans-semibold;
+	src:url(../fonts/2212.ttf);	
+}
+
+
+
+
+
 body{
 	margin: 0;
 	padding: 0;
@@ -5,10 +14,35 @@ body{
 }
 ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 a{
 	text-decoration: none;
 }
-.wrapper{
-	width: 1170px;
+.top-block{
+	margin: 40px 0;
+	.wrapper{
+		width: 1170px;
+		margin: 0 auto;
+		text-align: center;
+		li{
+			display: inline-block;
+				.navigation{
+					padding: 0px 15px;
+					font-family: open-sans-semibold;
+					font-size: 14px;
+					color: #555555;
+				}
+				.navigation:hover {
+					color: #5363db;
+					background: url(../img/nav-underline.png) no-repeat 50% 100%;
+				}
+				.logo{
+					padding: 27px 35px;
+					margin: 0 135px;
+					background: url(../img/logo.png) no-repeat 0 0;
+				}
+		}		
+	}
 }
